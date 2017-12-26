@@ -19,7 +19,12 @@ Steps to set up the development environment:
 
 To-Do:
 
+<<<<<<< HEAD
 1. Add the virtual screen to the Twitter Search Screen
 2. Move the tabs header below the Home header
 3. The borders of the drawer navigator to be reconfigured
 4. Add refresh FAB to the twitter screen
+=======
+1. Add refresh FAB to the twitter screen
+
+>>>>>>> 6e17a4ff8d00f7f705dad6eb6f2d6e821c9cf861
