@@ -16,15 +16,3 @@ Steps to set up the development environment:
 7. npm start (to start the metro bundler)
 8. react-native link
 9. react-native run-android (runs the react native application on the emulator or on the connected device)
-
-To-Do:
-
-<<<<<<< HEAD
-1. Add the virtual screen to the Twitter Search Screen
-2. Move the tabs header below the Home header
-3. The borders of the drawer navigator to be reconfigured
-4. Add refresh FAB to the twitter screen
-=======
-1. Add refresh FAB to the twitter screen
-
->>>>>>> 6e17a4ff8d00f7f705dad6eb6f2d6e821c9cf861
