@@ -4,16 +4,13 @@ import {StyleSheet, Image} from 'react-native';
 
 import { Container, Content, View, Header,Item,Icon,Input,Button, Text} from 'native-base';
 
-
-// Dummy
-
 class HighLightScreen extends Component  {
 
     static navigationOptions = {
 
         tabBarIcon: ({ tintColor }) => (
 
-        <Icon name="list" style={{color: tintColor}} />
+        <Icon name="albums" style={{color: tintColor}} />
 
         ),
 

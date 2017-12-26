@@ -2,16 +2,13 @@ import React, { Component } from 'react';
 
 import { Container, Content, Icon, Text} from 'native-base';
 
-
-// Dummy
-
 class ListScreen extends Component  {
 
     static navigationOptions = {
 
         tabBarIcon: ({ tintColor }) => (
 
-        <Icon name="list" style={{color: tintColor}} />
+        <Icon name="list-box" style={{color: tintColor}} />
 
         ),
 

@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 
 import { Container, Content, Icon, Text} from 'native-base';
 
-
-// Dummy
-
 export default class Notifications extends Component  {
 
     static navigationOptions = {

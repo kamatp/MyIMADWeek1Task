@@ -21,19 +21,7 @@ export default class SearchScreen extends Component  {
         return (
 
             <Container>
-                <Header style={{backgroundColor:'white'}}>
-                    <Left>
-                        <Button transparent onPress={() => this.props.navigation.goBack()}>
-                            <Icon name="arrow-back" style={{color: 'blue'}} />
-                        </Button>
-                    </Left>
-                    <Body>
-                        <Item style={{width: 200}}>
-                            <Input placeholder="Search Twitter" />
-                        </Item>
-                    </Body>
-                    <Right />
-                </Header>
+
                 <Content padder>
             
                    

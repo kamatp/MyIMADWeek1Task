@@ -2,12 +2,18 @@ import React from "react";
 
 import { Container, Content, Card, CardItem, Text, Left, Body, Right, List, ListItem, Icon, View, Thumbnail, Footer } from "native-base";
 
-const routes = [{name: "Profile",icon: 'person'},{name: "Lists", icon: 'list-box'},{name: "Moments",icon: 'flash'}, {name: "Highlights",icon:'albums'} ];
+import ProfileScreen from "../ProfileScreen/Profile.js";
+
+import ListScreen from '../ListScreen/ListScreen.js';
+
+import MomentsScreen from '../MomentsScreen/MomentsScreen.js';
+
+import HighLightScreen from '../HighLightScreen/HighLightScreen.js';
 
 let userdetails='';
 
 export default class SideBar extends React.Component {
-
+ 
   constructor() {
     
     super();
@@ -53,62 +59,54 @@ export default class SideBar extends React.Component {
               </View>
             </CardItem>
 
+            <View
+              style={{
+                borderBottomColor: 'lightgrey',
+                borderBottomWidth: 1,
+              }}
+            />
+
+            <CardItem button onPress={() => this.props.navigation.navigate("Profile")}>
+              <Icon name="person" />
+              <Text style = {{color:"black"}}>Profile</Text>
+            </CardItem>
+
+            <CardItem button onPress={() => this.props.navigation.navigate("Lists")}>
+              <Icon name="list-box" />
+              <Text style = {{color:"black"}}>Lists</Text>
+            </CardItem>
+
+            <CardItem button onPress={() => this.props.navigation.navigate("Moments")}>
+              <Icon name="flash" />
+              <Text style = {{color:"black"}}>Moments</Text>
+            </CardItem>
+
+            <CardItem button onPress={() => this.props.navigation.navigate("HighLights")}>
+              <Icon name="albums" />
+              <Text style = {{color:"black"}}>Highlights{"\n"}</Text>
+            </CardItem>
+
+            <View
+              style={{
+                borderBottomColor: 'lightgrey',
+                borderBottomWidth: 1,
+              }}
+            />
+
             <CardItem>
-              <List
-
-                dataArray={routes}
-
-                renderRow={data => {
-
-                  return (
-
-                    <ListItem
-
-                      onPress={() => this.props.navigation.navigate(data.name)}
-
-                    >
-
-                    <Left>
-
-                      <Icon name={data.icon}/>
-
-                    </Left>
-
-                    <Body>
-
-                      <Text>{data.name}</Text>
-
-                    </Body>
-
-                    </ListItem>
-
-                  );
-
-                }}
-
-              />
-
+              <Text>Settings and Privacy</Text>               
             </CardItem>
 
-            <CardItem bordered>
-
-              <List>
-
-                <ListItem>
-
-                  <Text>Settings and Privacy</Text>               
-
-                </ListItem>
-
-                <ListItem>
-
-                  <Text>Help Center</Text>               
-
-                </ListItem>
-
-              </List>
-
+            <CardItem>
+              <Text>Help Center</Text>               
             </CardItem>
+
+            <View
+              style={{
+                borderBottomColor: 'lightgrey',
+                borderBottomWidth: 1,
+              }}
+            />
 
           </Card>
 

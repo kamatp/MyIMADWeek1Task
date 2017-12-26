@@ -6,15 +6,13 @@ import  { TwitterContents }  from '../TwitterContents.js';
 
 export default class HomeScreen extends React.Component {
   
-  static navigationOptions = {
+ static navigationOptions = {
     
     tabBarIcon: ({ tintColor }) => (
     
     <Icon name="home" style={{color: tintColor}} />
     
     ), 
-
-    tabBarPosition: 'top',
 
     headerStyle: {
       backgroundColor: 'white'
@@ -34,38 +32,12 @@ export default class HomeScreen extends React.Component {
   }
 
   render() {
-  
-    const { navigation } = this.props;
+
+    const { navigate } = this.props.navigation;
 
     return (
 
       <Container>
-
-        <Header>
-
-        <Left>
-    
-                <Button
-    
-                  transparent
-    
-                  onPress={() => this.props.navigation.navigate("DrawerOpen")}>
-    
-                  <Thumbnail source={require('../../Images/tomjerry.jpg')} />
-    
-                </Button>
-    
-              </Left>
-    
-              <Body>
-    
-                <Title>Home</Title>
-    
-              </Body>
-    
-              <Right />
-    
-            </Header>
 
         <Content>
 
